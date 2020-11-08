@@ -1,0 +1,31 @@
+<mat-toolbar>
+        <span>Add Products</span>
+        <span class="fill-remaining-space"></span>
+        <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabindex="-1">
+                <mat-icon>clear</mat-icon>        
+        </button>
+    </mat-toolbar>
+<br>
+<br>
+<form autocomplete="off">
+<mat-form-field appearance="fill">
+    <mat-label>Select Product</mat-label>
+    <mat-select (selectionChange)="changeProductValue($event.value)">
+        <mat-option *ngFor="let product of products" [value]="product.productId">
+            {{product.productName}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+<mat-form-field appearance="fill">
+        <mat-label>Enter number of products</mat-label>
+        <input matInput [(ngModel)]="inputEntered" (change)="changedEnteredValue()" name="inputEntered">
+        </mat-form-field>
+        <h5 *ngIf="errorDisplay">The Number of Quantity should greater than Zero</h5>
+        
+  <h4>
+Total Amount to be Quoted for Product: {{calculatedAmount}}
+
+  </h4><br/>
+  <button mat-raised-button color="primary" [disabled]="errorDisplay || selectedError" (click)="onBuy()">Primary</button>
+</form>

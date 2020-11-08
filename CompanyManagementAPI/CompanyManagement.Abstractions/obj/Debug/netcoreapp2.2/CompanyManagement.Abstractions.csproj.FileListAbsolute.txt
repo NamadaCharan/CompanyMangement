@@ -1,0 +1,12 @@
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\bin\Debug\netcoreapp2.2\CompanyManagement.Abstractions.deps.json
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\bin\Debug\netcoreapp2.2\CompanyManagement.Abstractions.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\bin\Debug\netcoreapp2.2\CompanyManagement.Abstractions.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\bin\Debug\netcoreapp2.2\CompanyManagement.Models.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\bin\Debug\netcoreapp2.2\CompanyManagement.Models.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\obj\Debug\netcoreapp2.2\CompanyManagement.Abstractions.csprojAssemblyReference.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\obj\Debug\netcoreapp2.2\CompanyManagement.Abstractions.csproj.CoreCompileInputs.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\obj\Debug\netcoreapp2.2\CompanyManagement.Abstractions.AssemblyInfoInputs.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\obj\Debug\netcoreapp2.2\CompanyManagement.Abstractions.AssemblyInfo.cs
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\obj\Debug\netcoreapp2.2\CompanyManagement.Abstractions.csproj.CopyComplete
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\obj\Debug\netcoreapp2.2\CompanyManagement.Abstractions.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Abstractions\obj\Debug\netcoreapp2.2\CompanyManagement.Abstractions.pdb

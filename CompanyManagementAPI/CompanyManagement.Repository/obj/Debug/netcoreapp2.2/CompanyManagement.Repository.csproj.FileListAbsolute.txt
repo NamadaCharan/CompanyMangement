@@ -1,0 +1,14 @@
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\bin\Debug\netcoreapp2.2\CompanyManagement.Repository.deps.json
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\bin\Debug\netcoreapp2.2\CompanyManagement.Repository.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\bin\Debug\netcoreapp2.2\CompanyManagement.Repository.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\bin\Debug\netcoreapp2.2\CompanyManagement.Abstractions.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\bin\Debug\netcoreapp2.2\CompanyManagement.Models.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\bin\Debug\netcoreapp2.2\CompanyManagement.Abstractions.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\bin\Debug\netcoreapp2.2\CompanyManagement.Models.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\obj\Debug\netcoreapp2.2\CompanyManagement.Repository.csprojAssemblyReference.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\obj\Debug\netcoreapp2.2\CompanyManagement.Repository.csproj.CoreCompileInputs.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\obj\Debug\netcoreapp2.2\CompanyManagement.Repository.AssemblyInfoInputs.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\obj\Debug\netcoreapp2.2\CompanyManagement.Repository.AssemblyInfo.cs
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\obj\Debug\netcoreapp2.2\CompanyManagement.Repository.csproj.CopyComplete
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\obj\Debug\netcoreapp2.2\CompanyManagement.Repository.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Repository\obj\Debug\netcoreapp2.2\CompanyManagement.Repository.pdb

@@ -1,0 +1,72 @@
+<div class="add-company" >
+    <span class="padding-between">
+    <button mat-raised-button (click)="AddNewCompany()">
+    <mat-icon>add</mat-icon> New Company</button>
+    </span>
+    <span class="padding-between">
+    <mat-form-field appearance="fill" class="fill-remaining-space">
+            <mat-label>Select Product</mat-label>
+            <mat-select (selectionChange)="changeStatusValue($event)">
+                <mat-option *ngFor="let status of statusCode" [value]="status.statusId">
+                    {{status.statusDescription}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </span>
+    <span class="padding-between">
+        <button mat-raised-button color="primary" (click)="onClearFilter()" [disabled]="companyService.disableClearButton" >Clear Filter</button>
+    </span>
+</div>
+
+<div>
+   
+</div>
+
+<div class="mat-elevation-z8">
+    <mat-table [dataSource]="companyService.listData" matSort>
+        <ng-container matColumnDef="companyName">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Company Name</mat-header-cell>
+            <mat-cell *matCellDef="let element" (click)="NaviagteIntoDetails(element)">{{element.companyName}}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="address">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>Address</mat-header-cell>
+            <mat-cell *matCellDef="let element" (click)="NaviagteIntoDetails(element)">
+                <span *ngIf="element.address">{{element.address}}</span><span *ngIf="!element.address">NA</span>
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="city">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>City</mat-header-cell>
+            <mat-cell *matCellDef="let element" (click)="NaviagteIntoDetails(element)">
+                <span *ngIf="element.city">{{element.city}}</span><span *ngIf="!element.city">NA</span>
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="state">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>State</mat-header-cell>
+            <mat-cell *matCellDef="let element" (click)="NaviagteIntoDetails(element)">
+                <span *ngIf="element.state">{{element.state}}</span><span *ngIf="!element.state">NA</span>
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="status">
+            <mat-header-cell *matHeaderCellDef >Status</mat-header-cell>
+            <mat-cell *matCellDef="let element" (click)="NaviagteIntoDetails(element)">
+                {{element.statusDescription}}
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="actions">
+            <mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <button mat-button color="primary" (click)="AddUserContact(element)"><mat-icon>add</mat-icon>Contact</button>
+            </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="noData">
+                <mat-footer-cell *matFooterCellDef ><b>No Results found for the selected filter</b></mat-footer-cell>
+            </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row;columns:displayedColumns"></mat-row>
+     
+        <mat-footer-row *matFooterRowDef="['noData']" [ngClass]="{'hide':!(companyService.listData!=null && companyService.listData.data.length==0)}"></mat-footer-row>
+        
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="pageSizeOptionsArray" [pageSize]="5" showFirstLastButtons></mat-paginator>
+</div>

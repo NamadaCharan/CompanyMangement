@@ -1,0 +1,64 @@
+.my-grid-list{
+    margin-top: 4px !important;
+    background-color: #CDC9C9
+}
+.mat-grid-tilePad{
+    padding-bottom: 20px;
+}
+.my-grid-listbottom{
+    background-color: #CDC9C9 
+}
+
+
+table{
+    width: 100%;
+   }
+   
+   .mat-column-fullName {
+     word-wrap: break-word !important;
+     white-space: unset !important;
+     flex: 0 0 15% !important;
+     width: 20% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+     word-break: break-word;
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   
+   .mat-column-email {
+     word-wrap: normal !important;
+     white-space: unset !important;
+     flex: 0 0 38% !important;
+     width: 30% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+     word-break: break-word;
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   
+   .mat-column-mobile {
+     word-wrap: break-word !important;
+     white-space: unset !important;
+     flex: 0 0 18% !important;
+     width: 17% !important;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+     word-break: break-word;
+     -ms-hyphens: auto;
+     -moz-hyphens: auto;
+     -webkit-hyphens: auto;
+     hyphens: auto;
+   }
+   
+ .second{
+     background-color: #07B907
+ }
+ .first{
+     background-color: red
+ }

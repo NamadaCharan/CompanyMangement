@@ -1,0 +1,6 @@
+<button (click)="showGraph()" mat-raised-button color="primary"> Show Graphies</button>
+
+
+
+<canvas id="lineChart" *ngIf="companyService.showGraph">{{LineChart}}</canvas>
+ <canvas id="pieChart" *ngIf="companyService.showGraph">{{PieChart}}</canvas> 

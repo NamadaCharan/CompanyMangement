@@ -1,0 +1,9 @@
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\bin\Debug\netcoreapp2.2\CompanyManagement.Models.deps.json
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\bin\Debug\netcoreapp2.2\CompanyManagement.Models.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\bin\Debug\netcoreapp2.2\CompanyManagement.Models.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\obj\Debug\netcoreapp2.2\CompanyManagement.Models.csproj.CoreCompileInputs.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\obj\Debug\netcoreapp2.2\CompanyManagement.Models.AssemblyInfoInputs.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\obj\Debug\netcoreapp2.2\CompanyManagement.Models.AssemblyInfo.cs
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\obj\Debug\netcoreapp2.2\CompanyManagement.Models.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\obj\Debug\netcoreapp2.2\CompanyManagement.Models.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Models\obj\Debug\netcoreapp2.2\CompanyManagement.Models.csprojAssemblyReference.cache

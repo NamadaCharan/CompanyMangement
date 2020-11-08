@@ -1,0 +1,79 @@
+<mat-grid-list cols="2" rowHeight="8:1" class="my-grid-list">
+    <mat-grid-tile>
+        Company Name : <b> {{companyDetail?.companyDetails?.companyName | uppercase }}</b>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        Address : <b *ngIf="companyDetail?.companyDetails?.city"> {{companyDetail?.companyDetails?.address | uppercase }}</b>
+        <b *ngIf="!companyDetail?.companyDetails?.city"> Not Mentioned</b>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        Company Status:<b>  {{companyDetail?.companyDetails?.statusDescription | uppercase}}</b>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        City : <b *ngIf="companyDetail?.companyDetails?.city"> {{companyDetail?.companyDetails?.city | uppercase }}</b>
+        <b
+            *ngIf="!companyDetail?.companyDetails?.city"> Not Mentioned</b>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <button mat-flat-button color="primary" *ngIf="companyDetail?.companyDetails?.statusId==1 || companyDetail?.companyDetails?.statusId==6"
+            (click)="OpenConfirmDialog(companyDetail.companyDetails.statusId)">    
+                        <span *ngIf="companyDetail?.companyDetails?.statusId==1">Change Status to Sales Opportunity or Dead End </span>
+                        <span *ngIf="companyDetail?.companyDetails?.statusId==6">Mark Detail as Won or Lost</span>
+                    </button>
+        <button mat-flat-button color="primary" *ngIf="companyDetail?.companyDetails?.statusId!=1 && companyDetail?.companyDetails?.statusId!=3 && companyDetail?.companyDetails?.statusId!=6 && companyDetail?.companyDetails?.statusId!=7 && companyDetail?.companyDetails?.statusId!=8"
+            (click)="ChangeStatus(companyDetail.nextStatusId)">
+                          Change Status to {{companyDetail?.nextStatusDescription}} 
+                           </button>
+        <button mat-flat-button [ngClass]="{'first':companyDetail?.companyDetails?.statusId==3 ||companyDetail?.companyDetails?.statusId==8,'second':companyDetail?.companyDetails?.statusId==7}" *ngIf="companyDetail?.companyDetails?.statusId==3 || companyDetail?.companyDetails?.statusId==7 || companyDetail?.companyDetails?.statusId==8 ">
+                                The Final Status is {{companyDetail?.companyDetails?.statusDescription | uppercase}}
+                                 </button>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="2">
+    <mat-grid-tile *ngIf="companyDetail?.contactDetails.length>0">
+        <div class="mat-elevation-z8">
+            <mat-table [dataSource]="companyDetail?.contactDetails">
+                <ng-container matColumnDef="fullName">
+                    <mat-header-cell *matHeaderCellDef>FullName</mat-header-cell>
+                    <mat-cell *matCellDef="let element">{{element?.fullName}}
+
+                    </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="email" style="text-align:auto">
+                    <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <span *ngIf="element.email">{{element?.email}}</span>
+                        <span *ngIf="!element.email">NA</span>
+                    </mat-cell>
+                </ng-container>
+                <ng-container matColumnDef="mobile">
+                    <mat-header-cell *matHeaderCellDef>Mobile</mat-header-cell>
+                    <mat-cell *matCellDef="let element">{{element?.mobile}}
+
+                    </mat-cell>
+                </ng-container>
+
+                <ng-container matColumnDef="actions">
+                    <mat-header-cell *matHeaderCellDef>Actions</mat-header-cell>
+                    <mat-cell *matCellDef="let element">
+                        <button mat-button (click)="onBuyClick(element.userId)"><mat-icon>add</mat-icon>Buy Product</button>
+                    </mat-cell>
+
+                </ng-container>
+
+                <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+                <mat-row *matRowDef="let row;columns:displayedColumns"></mat-row>
+            </mat-table>
+
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile *ngIf="companyDetail?.contactDetails.length===0">
+        <b>   No Contact Details are added.</b>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-pie-chats></app-pie-chats>
+
+    </mat-grid-tile>
+
+</mat-grid-list>

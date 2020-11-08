@@ -1,0 +1,8 @@
+/* ::ng-deep .mat-dialog-container{
+    box-shadow: 0px 0px #000000;
+    background: transparent;
+  } */
+  .BackGround{
+    box-shadow: 0px 0px #000000;
+    background: transparent;
+  }

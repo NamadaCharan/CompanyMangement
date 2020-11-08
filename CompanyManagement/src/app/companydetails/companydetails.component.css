@@ -1,0 +1,7 @@
+ng-container.mat-cell :hover{
+cursor: pointer;
+}
+
+.padding-between{
+    padding-right: 50px;
+}

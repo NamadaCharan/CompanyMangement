@@ -1,0 +1,24 @@
+<div *ngIf="companyService.statusId==1">
+    <div class="content-container">
+        <mat-icon id="close-icon" (click)="closeDialog()">close</mat-icon>
+        <span class="content-span full-width">
+                    Please  select one option to  change the Status
+            </span>
+    </div>
+
+    <button mat-flat-button id="no-button" [mat-dialog-close]="3">Dead End</button>
+    <button mat-flat-button id="yes-button" [mat-dialog-close]="2">Sales Opportunity</button>
+</div>
+
+
+<div *ngIf="companyService.statusId==6">
+    <div class="content-container">
+        <mat-icon id="close-icon" (click)="closeDialog()">close</mat-icon>
+        <span class="content-span full-width">
+                        Please  select one option to  change the Status
+                </span>
+    </div>
+
+    <button mat-flat-button id="no-button" [mat-dialog-close]="8">Deal Lost</button>
+    <button mat-flat-button id="yes-button" [mat-dialog-close]="7">Deal Won</button>
+</div>

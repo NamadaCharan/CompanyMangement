@@ -1,0 +1,16 @@
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Business.deps.json
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Business.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Business.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Abstractions.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Models.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Repository.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Abstractions.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Models.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\bin\Debug\netcoreapp2.2\CompanyManagement.Repository.pdb
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\obj\Debug\netcoreapp2.2\CompanyManagement.Business.csprojAssemblyReference.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\obj\Debug\netcoreapp2.2\CompanyManagement.Business.csproj.CoreCompileInputs.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\obj\Debug\netcoreapp2.2\CompanyManagement.Business.AssemblyInfoInputs.cache
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\obj\Debug\netcoreapp2.2\CompanyManagement.Business.AssemblyInfo.cs
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\obj\Debug\netcoreapp2.2\CompanyManagement.Business.csproj.CopyComplete
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\obj\Debug\netcoreapp2.2\CompanyManagement.Business.dll
+C:\Users\M1046907\Desktop\Learn\My_Learing\POC\CompanyManagementAPI\CompanyManagement.Business\obj\Debug\netcoreapp2.2\CompanyManagement.Business.pdb
