@@ -7,6 +7,7 @@ import { DialogService } from 'src/app/shared/dialog.service';
 import { SpinnerService } from 'src/app/shared/spinner.service';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { AddproductComponent } from 'src/app/addproduct/addproduct.component';
+import { ComanyStatusCode } from 'src/app/Models/ComanyStatusCode';
 
 @Component({
   selector: 'app-companyinfo',
@@ -16,6 +17,9 @@ import { AddproductComponent } from 'src/app/addproduct/addproduct.component';
 export class CompanyinfoComponent implements OnInit {
   companyDetails: CompanyDetails = new CompanyDetails();
   displayedColumns: string[] = ['fullName', 'email', 'mobile', 'actions']
+  public resultCodes: { SalesLead: number; SalesOpportunity: number; DeadEnd: number; Initialdiscussion: number,
+    Proposal: number,Negotiation: number,DealWon: number,DealLost: number };
+  
   constructor(private route: ActivatedRoute,
     private companyService: CompanyService,
     private dialogService: DialogService,
@@ -26,6 +30,7 @@ export class CompanyinfoComponent implements OnInit {
       let id = params.get('id')
       this.getCompanyDetails(id)
     })
+    this.resultCodes=ComanyStatusCode
   }
 
 

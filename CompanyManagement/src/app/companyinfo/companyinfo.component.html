@@ -11,22 +11,22 @@
     </mat-grid-tile>
     <mat-grid-tile>
         City : <b *ngIf="companyDetail?.companyDetails?.city"> {{companyDetail?.companyDetails?.city | uppercase }}</b>
-        <b
-            *ngIf="!companyDetail?.companyDetails?.city"> Not Mentioned</b>
+        <b *ngIf="!companyDetail?.companyDetails?.city"> Not Mentioned</b>
     </mat-grid-tile>
     <mat-grid-tile>
-        <button mat-flat-button color="primary" *ngIf="companyDetail?.companyDetails?.statusId==1 || companyDetail?.companyDetails?.statusId==6"
+        <button mat-flat-button color="primary" *ngIf="companyDetail?.companyDetails?.statusId==resultCodes.SalesLead || companyDetail?.companyDetails?.statusId==resultCodes.Negotiation"
             (click)="OpenConfirmDialog(companyDetail.companyDetails.statusId)">    
-                        <span *ngIf="companyDetail?.companyDetails?.statusId==1">Change Status to Sales Opportunity or Dead End </span>
-                        <span *ngIf="companyDetail?.companyDetails?.statusId==6">Mark Detail as Won or Lost</span>
-                    </button>
-        <button mat-flat-button color="primary" *ngIf="companyDetail?.companyDetails?.statusId!=1 && companyDetail?.companyDetails?.statusId!=3 && companyDetail?.companyDetails?.statusId!=6 && companyDetail?.companyDetails?.statusId!=7 && companyDetail?.companyDetails?.statusId!=8"
+        <span *ngIf="companyDetail?.companyDetails?.statusId==resultCodes.SalesLead">Change Status to Sales Opportunity or Dead End </span>
+        <span *ngIf="companyDetail?.companyDetails?.statusId==resultCodes.Negotiation">Mark Detail as Won or Lost</span>
+         </button>
+        <button mat-flat-button color="primary" *ngIf="companyDetail?.companyDetails?.statusId!=resultCodes.SalesLead && companyDetail?.companyDetails?.statusId!=resultCodes.DeadEnd && companyDetail?.companyDetails?.statusId!=resultCodes.Negotiation && companyDetail?.companyDetails?.statusId!=resultCodes.DealWon && companyDetail?.companyDetails?.statusId!=resultCodes.DealLost"
             (click)="ChangeStatus(companyDetail.nextStatusId)">
                           Change Status to {{companyDetail?.nextStatusDescription}} 
-                           </button>
-        <button mat-flat-button [ngClass]="{'first':companyDetail?.companyDetails?.statusId==3 ||companyDetail?.companyDetails?.statusId==8,'second':companyDetail?.companyDetails?.statusId==7}" *ngIf="companyDetail?.companyDetails?.statusId==3 || companyDetail?.companyDetails?.statusId==7 || companyDetail?.companyDetails?.statusId==8 ">
+        </button>
+        <button mat-flat-button [ngClass]="{'first':companyDetail?.companyDetails?.statusId==resultCodes.DeadEnd ||companyDetail?.companyDetails?.statusId==resultCodes.DealLost ,'second':companyDetail?.companyDetails?.statusId==resultCodes.DealWon}"
+            *ngIf="companyDetail?.companyDetails?.statusId==resultCodes.DeadEnd || companyDetail?.companyDetails?.statusId==resultCodes.DealWon || companyDetail?.companyDetails?.statusId==resultCodes.DealLost ">
                                 The Final Status is {{companyDetail?.companyDetails?.statusDescription | uppercase}}
-                                 </button>
+         </button>
     </mat-grid-tile>
 </mat-grid-list>
 
